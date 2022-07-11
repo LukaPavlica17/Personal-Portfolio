@@ -1,0 +1,109 @@
+:root{
+--primary-color: #70ace6;
+  --secondary-color:#44586e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  position: fixed;
+  top: 0;
+}
+
+body{
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  background-color: var(--primary-color);
+  padding-top: 150px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(15, 55, 100);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#title {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+#profile-link{
+  text-decoration: none;
+  color: white;
+}
+
+#projects {
+  text-align: center;
+  width: 100%;
+  padding: 7rem .1rem;
+}
+.row {
+  margin: 8px -16px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.project-tile{
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+img{
+  width: 200px;
+  height: 200px;
+}
+#caption{
+  color: white;
+}
+p{
+  color:white;
+}
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch, .fa-github:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+@media (max-width: 600px) {
+  #navbar {
+    padding: 0rem 1rem;
+    justify-content: center;
+  }
+}
